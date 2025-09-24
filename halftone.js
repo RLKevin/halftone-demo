@@ -2,10 +2,10 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 // options
-const dotSpacing = 10;
-const dotMinRadius = -10;
-const dotMaxRadius = 10;
-const animationSpeed = 33 * 0.00001;
+const dotSpacing = 15;
+const dotMinRadius = -15;
+const dotMaxRadius = 15;
+const animationSpeed = 20 * 0.00001;
 const nodes = 2;
 const color = '#ff005b';
 const images = ['gradient.jpg', 'gradient2.jpg']; // Add your image paths here
