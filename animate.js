@@ -13,6 +13,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		effects: true,
 	});
 
+    // gsap.fromTo('.image-grid',
+    //     {
+
+    //     },
+    //     {
+    //         scrollTrigger: {
+    //             trigger: '.image-grid',
+    //             start: 'middle middle',
+    //             end: '+=500',
+    //             scrub: true,
+    //             pin: true,
+    //             pinSpacing: true,
+    //         }
+    //     }
+    // );
+
     // gsap scrolltrigger
     // .portal element is a tiny portal with an image inside that scales up as you scroll, it needs to be pinned and then animated
     gsap.fromTo('.portal', 
@@ -26,10 +42,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             ease: 'none',
             scrollTrigger: {
                 trigger: '.portal',
-                start: 'top middle',
+                start: 'middle middle',
                 end: '+=1000',
-                scrub: 1,
+                scrub: true,
                 pin: true,
+                pinSpacing: true,
             }
         }
     );
