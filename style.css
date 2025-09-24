@@ -127,6 +127,14 @@ html {
 						border-radius: 1rem;
 					}
 				}
+
+				.scroll-video {
+					z-index: -1;
+					position: fixed;
+					width: 100vw;
+					height: 100vh;
+					object-fit: cover;
+				}
 			}
 		}
 	}
@@ -163,6 +171,14 @@ html {
 .text-container {
 	> * + * {
 		margin-top: 1em;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
 	}
 }
 
