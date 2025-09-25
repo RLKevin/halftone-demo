@@ -101,9 +101,11 @@ html {
 					gap: 4rem;
 
 					img {
+						aspect-ratio: 5/3;
 						width: 80%;
 						height: auto;
 						object-fit: cover;
+						object-position: center;
 						border-radius: 1rem;
 						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 					}
