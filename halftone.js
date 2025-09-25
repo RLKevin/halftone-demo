@@ -2,9 +2,9 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 // options
-const dotSpacing = 15;
-const dotMinRadius = -15;
-const dotMaxRadius = 15;
+const dotSpacing = 30;
+const dotMinRadius = -30;
+const dotMaxRadius = 30;
 const animationSpeed = 20 * 0.00001;
 const nodes = 2;
 const color = '#ff005b';

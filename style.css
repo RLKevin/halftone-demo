@@ -26,6 +26,7 @@ html {
 			}
 			canvas.blur {
 				filter: blur(4px);
+				opacity: 0.4;
 			}
 		}
 
@@ -54,6 +55,38 @@ html {
 					align-items: center;
 					text-align: center;
 					gap: 2rem;
+				}
+
+				&.hero {
+					img {
+						--_xplacement: 20%;
+						--_yplacement: 33%;
+						--_rotation: 15deg;
+						width: 4rem;
+						height: 4rem;
+						position: absolute;
+
+						&:nth-child(1) {
+							top: var(--_yplacement);
+							left: var(--_xplacement);
+							transform: rotate(calc(-1 * var(--_rotation)));
+						}
+						&:nth-child(2) {
+							top: var(--_yplacement);
+							right: var(--_xplacement);
+							transform: rotate(var(--_rotation));
+						}
+						&:nth-child(3) {
+							bottom: var(--_yplacement);
+							left: var(--_xplacement);
+							transform: rotate(var(--_rotation));
+						}
+						&:nth-child(4) {
+							bottom: var(--_yplacement);
+							right: var(--_xplacement);
+							transform: rotate(calc(-1 * var(--_rotation)));
+						}
+					}
 				}
 
 				.image-grid {
@@ -175,14 +208,29 @@ html {
 
 	h1 {
 		font-size: 3rem;
+		line-height: 1.2;
 	}
-
+	
 	h2 {
-		font-size: 1.5rem;
+		font-size: 2rem;
+		line-height: 1.4;
 	}
 }
 
 .image-container {
 	border-radius: 1rem;
 	overflow: hidden;
+}
+
+.btn {
+	display: inline-grid;
+	place-items: center;
+	padding-inline: 1.5rem;
+	border: none;
+	background-color: #ff005b;
+	color: #fff;
+	height: 44px;
+	border-radius: 3px;
+	text-decoration: none;
+	margin-top: 2rem;
 }
